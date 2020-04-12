@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Did POTUS Say it?",
+  "name": "Did POTUS Say It?",
   "icons": [
     {
       "src": "favicon.ico",

@@ -1,13 +1,177 @@
+@font-face {
+  font-family: 'Amsterdam';
+  src: local('Amsterdam'), url(./assets/fonts/amsterdam.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'SisterSpray';
+  src: local('SisterSpray'), url(./assets/fonts/SisterSpray.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Misdemeanor';
+  src: local('Misdemeanor'), url(./assets/fonts/Misdemeanor.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Flow';
+  src: local('Flow'), url(./assets/fonts/Flow.otf) format('truetype');
+}
+@font-face {
+  font-family: 'Sprite';
+  src: local('Sprite'), url(./assets/fonts/SpriteGraffiti-Regular.ttf) format('truetype');
+}
+
+html, body, #root {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Sprite;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url("./assets/jpgs/trump.jpg");
+  filter: drop-shadow(2px 4px 21px black);  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.pad-20 {
+  padding: 20px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+#canvas {
+  height: 250px;
+  flex: 1;
+  top: 50px;
+}
+
+.btn {
+  white-space: nowrap;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-size: 40px;
+  color: #fff;
+  padding: 8px 12px;
+  font-family: Amsterdam;
+}
+
+.btn:hover {
+  border: 2px solid #000;
+  color: #fff;
+  background: #000;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.resp-header {
+  font-size: 55px;
+  color: #fff;
+  font-family: Amsterdam;
+  text-align: center;
+}
+
+.quote {
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-family: Sprite;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+  transform: rotate(-8deg) translateY(76px);
+  text-transform: uppercase;
+}
+
+@media (max-width: 376px) {
+  .quote {
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .resp-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-container {
+    align-items: center;
+  }
+
+  .resp-header {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 30px;
+  }
+
+  .action-container {
+    justify-content: flex-end;
+  }
+
+  #canvas {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (hover:none), (hover:on-demand) {
+  .btn:hover { 
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+  }
 }

@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './assets/fonts/amsterdam.ttf'
+import './assets/fonts/Flow.otf'
+import './assets/fonts/SisterSpray.ttf'
+import './assets/fonts/Misdemeanor.ttf'
+import './assets/fonts/SpriteGraffiti-Regular.ttf'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
